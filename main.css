@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+  --text-gray: hsl(201, 11%, 66%);
+  --head-gray: hsl(210, 10%, 33%);
+  --btn-cyan: hsl(171, 66%, 44%);
+  --btn-blue: hsl(233, 100%, 69%);
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 100%;
+}
+header img {
+  padding-bottom: 70px;
+}
+
+section {
+  margin: 12px auto;
+}
+
+h2 {
+  color: var(--head-gray);
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: var(--head-gray);
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: var(--head-gray);
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+p {
+  color: var(--text-gray);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#section1,
+#section6 {
+  padding: 0 20px;
+}
+
+#section1 div,
+#section6 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 16px;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+#section1 button,
+#section6 button {
+  width: 100%;
+  padding: 16px 0;
+  text-align: center;
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+}
+
+#section1 button:first-of-type,
+#section6 button:first-of-type {
+  background: var(--btn-cyan);
+  border: 1px outset var(--btn-cyan);
+  box-shadow: inset 2px 2px var(--btn-cyan),
+    outset -1px 6px 11px -8px var(--btn-cyan);
+}
+
+#section1 button:last-of-type,
+#section6 button:last-of-type {
+  background: hsl(233, 100%, 69%);
+}
+
+#section2 {
+  margin-top: 60px;
+  padding: 0 25px;
+}
+
+#section2 > div:last-of-type {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#section2 img {
+  height: 250px;
+  width: 100%;
+}
+
+#section2 > div:last-of-type > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#section3 {
+  margin-top: 120px;
+  padding: 0 25px;
+}
+#section3 img {
+  margin-top: 40px;
+  height: 210px;
+  width: 100%;
+}
+#section4 {
+  margin-top: 70px;
+}
+#section4 > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+#section4 .workflow {
+  margin-bottom: 43px;
+}
+#section4 .workflow > div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#section4 .workflow img {
+  height: 24px;
+  width: 24px;
+}
+
+#section5 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+}
+#section5 img {
+  display: block;
+  min-height: 32px;
+  max-height: 44px;
+  max-width: 120px;
+}
+
+#section6 {
+  margin-top: 130px;
+}
+
+footer {
+  padding-top: 32px;
+  margin-top: 90px;
+  background: hsl(207, 23%, 91%);
+}
+
+#section7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+#section7 > div {
+  display: flex;
+  justify-content: center;
+}
+.footer-logo {
+  width: 50px;
+  height: 50px;
+}
+
+#section7 > nav > ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1;
+  gap: 20px;
+}
+#section7 > nav > ul li a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  color: var(--head-gray);
+}
+
+#section7 > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+#section7 > ul img {
+  width: 28px;
+  height: 28px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--head-gray);
+  padding: 12px 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 376px) {
+  header {
+    background-image: url(./images/bg-header-desktop.png);
+  }
+
+  #section1,
+  #section6 {
+    max-width: 650px;
+    margin: auto;
+    padding: 0 10px;
+  }
+
+  #section1 div,
+  #section6 div {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #section1 button,
+  #section6 button {
+    width: 30%;
+  }
+
+  #section2 {
+    margin-top: 90px;
+    padding-left: 0;
+  }
+
+  #section2 > div:first-of-type {
+    max-width: 650px;
+    margin: auto;
+    padding: 0 10px;
+  }
+
+  #section2 > div:last-of-type {
+    margin-top: 40px;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  #section2 img {
+    height: 420px;
+    width: 100%;
+    margin-left: -20px;
+  }
+
+  #section2 > div:last-of-type > div:last-of-type {
+    width: 38%;
+  }
+
+  .snippets h4,
+  .snippets p {
+    text-align: left;
+    padding: 0;
+  }
+
+  #section3 {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+
+  #section3 img {
+    margin-top: 40px;
+    height: 410px;
+    width: 100%;
+  }
+
+  #section4 > div {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #section4 .workflow {
+    margin-bottom: 13px;
+  }
+
+  #section5 {
+    max-width: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin: 90px auto 0;
+  }
+
+  #section6 {
+    margin-top: 130px;
+  }
+
+  footer {
+    padding-top: 20px;
+  }
+
+  #section7 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #section7 > div {
+    align-items: center;
+  }
+
+  #section7 > nav > ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 70px;
+    row-gap: 20px;
+  }
+  #section7 > nav > ul li a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: var(--head-gray);
+  }
+
+  #section7 > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+
+  #section7 > ul img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+#section1 > div button:hover,
+#section6 > div button:hover {
+  cursor: pointer;
+}
+
+#section7 ul > li > a:hover {
+  color: var(--btn-cyan);
+}
