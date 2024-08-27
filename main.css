@@ -347,7 +347,7 @@ footer {
     row-gap: 20px;
   }
   #section7 > nav > ul li a {
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     display: block;
     color: var(--head-gray);
